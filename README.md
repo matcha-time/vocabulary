@@ -1,15 +1,15 @@
 # Vocabulary Flashcards
 
-A simple repository to organize and share vocabulary flashcards by language, topic, and learning roadmap.
+A simple repository to organize and share vocabulary flashcards by language, topic, and learning roadmaps.
 
 ---
 
 ## What's inside
 
-- Languages organized at the top level (e.g., `english`, `spanish`, `japanese`).
+- Languages organized at the top level (e.g., `french`, `english`, `spanish`, `korean`).
 - Within each language:
-  - `topics/` for curated sets (e.g., food, travel, business, tech).
-  - `roadmaps/` for progressive decks aligned to study plans or courses.
+  - `topics/` for curated sets (e.g., time, body, health, numbers).
+  - `roadmaps/` for progressive decks aligned to courses, exams or everyday life.
   - `shared/` for common utilities or references (e.g., parts of speech, frequency lists).
 
 Example structure:
@@ -18,21 +18,21 @@ Example structure:
 /
 ├─ english/
 │  ├─ topics/
-│  │  ├─ food.json
-│  │  ├─ travel.json
-│  │  └─ business.json
+│  │  ├─ time.json
+│  │  ├─ body.json
+│  │  └─ numbers.json
 │  ├─ roadmaps/
-│  │  ├─ a1.json
-│  │  ├─ a2.json
-│  │  └─ b1.json
+│  │  ├─ level-a1.json
+│  │  ├─ level-a2.json
+│  │  └─ level-b1.json
 │  └─ shared/
-│     └─ core-100.json
+│     └─ core-2000.json
 ├─ spanish/
 │  └─ topics/
-│     └─ salud.json
-└─ japanese/
+│     └─ health.json
+└─ french/
    └─ roadmaps/
-      └─ n5.json
+      └─ level-c1.json
 ```
 
 ---
@@ -97,7 +97,7 @@ You may also add per-deck metadata via a sibling file named like `food.meta.json
 
 ## Roadmaps
 
-Roadmaps are progressive decks (A1→C1, JLPT N5→N1, etc.). Each file should represent one stage and build on the previous. Keep difficulty and scope consistent within each stage.
+Roadmaps are progressive decks (A1→C1, TOPIK level 1→6, etc.). Each file should represent one stage and build on the previous, no duplicate entries (A2 does not contain A1).
 
 ---
 

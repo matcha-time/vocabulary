@@ -30,9 +30,9 @@ Example structure:
 ├─ spanish/
 │  └─ topics/
 │     └─ health.json
-└─ french/
+└─ korean/
    └─ roadmaps/
-      └─ level-c1.json
+      └─ topik-1.json
 ```
 
 ---
@@ -48,12 +48,10 @@ All decks are simple JSON arrays of cards. Keep files UTF-8 encoded.
     "translation": "la manzana",
     "language": "english",
     "topic": "food",
-    "notes": "countable; common beginner noun",
     "examples": [
       { "source": "I eat an apple every day.", "translation": "Como una manzana todos los días." }
     ],
     "tags": ["A1", "noun"],
-    "createdAt": "2025-11-04"
   }
 ]
 ```
@@ -61,10 +59,10 @@ All decks are simple JSON arrays of cards. Keep files UTF-8 encoded.
 Required fields:
 - `term`: the headword in the deck language
 - `translation`: meaning in the target/paired language
-  - **For languages with articles (e.g., Spanish, French), include the article with the noun**, e.g., `"term": "la manzana"`
+    **For languages with articles (e.g., Spanish, French), include the article with the noun**, e.g., `"term": "la manzana"`
 
 Optional but recommended:
-- `notes`, `examples[]`, `tags[]`, `topic`, `createdAt`
+- `notes`, `examples[]`, `tags[]`, `topic`
 
 You may also add per-deck metadata via a sibling file named like `food.meta.json`:
 
@@ -98,7 +96,7 @@ You may also add per-deck metadata via a sibling file named like `food.meta.json
 
 ## Roadmaps
 
-Roadmaps are progressive decks (A1→C1, TOPIK level 1→6, etc.). Each file should represent one stage and build on the previous, no duplicate entries (A2 does not contain A1).
+Roadmaps are progressive decks (A1→C1, TOPIK 1→6, etc.). Each file should represent one stage and build on the previous, no duplicate entries (e.g., A2 does not contain A1).
 
 ---
 

@@ -45,7 +45,7 @@ All decks are simple JSON arrays of cards. Keep files UTF-8 encoded.
 [
   {
     "term": "apple",
-    "translation": "manzana",
+    "translation": "la manzana",
     "language": "english",
     "topic": "food",
     "notes": "countable; common beginner noun",
@@ -61,6 +61,7 @@ All decks are simple JSON arrays of cards. Keep files UTF-8 encoded.
 Required fields:
 - `term`: the headword in the deck language
 - `translation`: meaning in the target/paired language
+  - **For languages with articles (e.g., Spanish, French), include the article with the noun**, e.g., `"term": "la manzana"`
 
 Optional but recommended:
 - `notes`, `examples[]`, `tags[]`, `topic`, `createdAt`
